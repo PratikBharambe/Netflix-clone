@@ -1,14 +1,18 @@
-import './App.css'
+import "./App.css";
 
-import Home from './assets/pages/Home'
+import Home from "./assets/pages/Home";
+import MoreReasonToJoin from "./assets/components/MoreReasonToJoin";
 
 function App() {
-
   return (
     <>
-      <Home/>
+      <Home />
+
+      <div className="bg-black text-white">
+        <MoreReasonToJoin />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
