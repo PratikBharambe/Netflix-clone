@@ -7,7 +7,7 @@ import { HiOutlineLanguage } from "react-icons/hi2";
 function Navbar() {
   return (
     <div className="bg-gradient-to-b from-black/50 to-transparent">
-        <nav className="flex items-center w-[90%] m-auto pt-16 justify-between p-4 h-16">
+        <nav className="flex items-center w-[80%] m-auto pt-10 justify-between p-4 h-16">
       {/* Left side: Logo */}
       <div className="h-10 w-36 flex items-center">
         <img src={netflix} alt="Netflix Logo" />
