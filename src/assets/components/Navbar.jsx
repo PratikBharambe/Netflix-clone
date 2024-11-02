@@ -3,6 +3,8 @@ import React from "react";
 import netflix from "../images/netflix.png";
 import LanguageDropdown from "./LanguageDropdown";
 
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <div className="bg-gradient-to-b from-black/60 to-transparent">

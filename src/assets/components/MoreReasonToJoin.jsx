@@ -1,8 +1,7 @@
 import React from "react";
 import { IoDesktopOutline } from "react-icons/io5";
 import { FaDownload } from "react-icons/fa";
-import { GiPartyPopper } from "react-icons/gi";
-import { GiDramaMasks } from "react-icons/gi";
+import { GiPartyPopper, GiDramaMasks } from "react-icons/gi";
 
 function MoreReasonToJoin() {
   const moreReasons = [
@@ -30,16 +29,21 @@ function MoreReasonToJoin() {
 
   return (
     <>
-      <div className="text-3xl font-semibold">More reasons to join</div>
-      {moreReasons.map((item) => (
-        <div class="inline-block items-center h-80 bg-gradient-to-br from-[#272445] via-[#16142a] to-[#000000] m-3 w-[21rem] rounded-md text-white p-8 relative">
-          <h2 class="text-2xl font-bold">{item.head}</h2>
-          <p class="mt-4 text-[#cecbcb]">{item.desc}</p>
-          <div class="absolute bottom-4 right-4 p-4 pr-8 text-6xl">
-            {item.logo}
+      <div className="text-3xl font-semibold ml-5">More reasons to join</div>
+      <div className="flex flex-wrap justify-center mt-10">
+        {moreReasons.map((item, index) => (
+          <div
+            key={index}
+            className="inline-block items-center h-80 bg-gradient-to-br from-[#272445] via-[#16142a] to-[#000000] m-3 w-[19rem] rounded-md text-white p-8 relative"
+          >
+            <h2 className="text-2xl font-bold">{item.head}</h2>
+            <p className="mt-4 text-[#cecbcb]">{item.desc}</p>
+            <div className="absolute bottom-4 right-4 p-4 pr-8 text-6xl">
+              {item.logo}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </>
   );
 }
