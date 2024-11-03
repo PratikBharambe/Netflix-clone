@@ -1,6 +1,5 @@
 import "./App.css";
 
-
 import Home from "./assets/pages/Home";
 import MoreReasonToJoin from "./assets/components/MoreReasonToJoin";
 import FrequentlyAskedQuestions from "./assets/components/FrequentlyAskedQuestions";

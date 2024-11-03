@@ -49,26 +49,25 @@ function Footer() {
 
         <div className="mt-11">
           <table>
-            {fTable.map((item)=>(
-                <tr>
-                    {item.trdata.map((fdata)=>(
-                        <td className="w-[25rem] py-3">
-                            <a href={fdata.link} className="underline">{fdata.text}</a>
-                        </td>
-                    ))}
-                </tr>
+            {fTable.map((item) => (
+              <tr>
+                {item.trdata.map((fdata) => (
+                  <td className="w-[25rem] py-3">
+                    <a href={fdata.link} className="underline">
+                      {fdata.text}
+                    </a>
+                  </td>
+                ))}
+              </tr>
             ))}
           </table>
         </div>
 
         <div className="p-2 border-2 border-white rounded-xl w-[150px] flex justify-center mt-11">
-            <LanguageDropdown/>
+          <LanguageDropdown />
         </div>
 
-        <div className="p-2 mt-11">
-            Netflix India
-        </div>
-
+        <div className="p-2 mt-11">Netflix India</div>
       </div>
     </>
   );
